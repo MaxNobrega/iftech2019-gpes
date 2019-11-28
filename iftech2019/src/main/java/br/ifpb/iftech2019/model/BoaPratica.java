@@ -1,5 +1,6 @@
 package br.ifpb.iftech2019.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,8 +19,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "tb_pratica")
 @NoArgsConstructor
-public class BoaPratica {
+public class BoaPratica implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "id_boapratica")
