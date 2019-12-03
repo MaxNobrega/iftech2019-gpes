@@ -1,0 +1,13 @@
+<app-layout>
+
+    <div class="col-md-6">
+        <form #categoriaForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control" id="titulo" [(ngModel)]="categoria.titulo" name="titulo" placeholder="Digite o título">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Cadastrar">
+        </form>
+    </div>
+
+</app-layout>
